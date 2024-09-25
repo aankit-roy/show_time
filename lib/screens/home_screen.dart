@@ -21,7 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: AppColors.backgroundBlack,
-        leading: Icon(Icons.menu,color: AppColors.lightGray,),
+        leading: const Icon(Icons.menu,color: AppColors.lightGray,),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -31,8 +31,8 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
         actions: [
-          Icon(Icons.cast,color: AppColors.lightGray,),
-          SizedBox(width: 10),
+          const Icon(Icons.cast,color: AppColors.lightGray,),
+          const SizedBox(width: 10),
         ],
       ),
       backgroundColor: Colors.black,

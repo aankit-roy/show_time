@@ -9,7 +9,7 @@ Future<List<ShowResponse>> fetchShowsData() async {
     List jsonResponse = json.decode(response.body);
 
     // Print the raw JSON response for debugging
-    print('Fetched data: $jsonResponse');
+
     return jsonResponse.map((show) => ShowResponse.fromJson(show)).toList();
   } else {
     throw Exception('Failed to load shows');
